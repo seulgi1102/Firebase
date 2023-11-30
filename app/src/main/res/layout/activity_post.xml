@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#ECECFB"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/textview_topbar"
+        android:padding="5dp"
+        android:text="Posting Page"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/postText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:textColor="#5E5E5E"
+        android:text="Write a sales post for the product" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#DCDCED"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title:"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="34"
+            android:hint="title"
+            android:maxLines="2"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="#ECECFB"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/enterPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="price"
+            android:ems="10"
+            android:maxLength="10"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="428dp"
+        android:layout_weight="1"
+        android:background="#ECECFB"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description:"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="description"
+            android:inputType="textMultiLine"
+            android:maxLines="12"
+            android:scrollHorizontally="false"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDCDDF"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <android.widget.Button
+            android:id="@+id/cancel"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_cancel"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <android.widget.Button
+            android:id="@+id/post"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_post"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:text="Post"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:layout_weight="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_topbar"
+        android:padding="5dp"
+        android:text="Detail Page"
+        android:textColor="#FFFFFF"
+
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCED"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="title"
+            android:maxLines="2"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#ECECFB"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/detailPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="price"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  won"
+            android:textSize="34sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+
+        android:background="#ECECFB"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/detailStatus"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="status"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#DCDCED"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/descTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp"
+            android:text="Seller:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailSeller"
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:hint="seller"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <android.widget.Button
+            android:id="@+id/msgBtn"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_message"
+            android:text="Talk"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#ECECFB"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/descTxt6"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Description:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="description"
+            android:inputType="textMultiLine"
+            android:maxLines="12"
+            android:padding="10dp"
+            android:scrollHorizontally="false"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDCDDF"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:text="TextView"
+            android:visibility="invisible" />
+
+        <android.widget.Button
+            android:id="@+id/closeDetailPage"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:background="@drawable/button_cancel"
+            android:text="Close"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
