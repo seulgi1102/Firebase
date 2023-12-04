@@ -151,6 +151,7 @@
             android:ems="10"
             android:hint="description"
             android:inputType="textMultiLine"
+            android:scrollbars="vertical"
             android:maxLines="20"
             android:padding="10dp"
             android:scrollHorizontally="false"

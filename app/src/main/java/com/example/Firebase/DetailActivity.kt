@@ -3,6 +3,7 @@ package com.example.Firebase
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -33,6 +34,7 @@ class DetailActivity :AppCompatActivity() {
         detailSeller.text = seller
         detailPrice.text = price
         detailStatus.text = status
+        detailDescription.movementMethod = ScrollingMovementMethod.getInstance()
         val cancel = findViewById<Button>(R.id.closeDetailPage)
         cancel.setOnClickListener {
             val intent = Intent(this, SalesActivity::class.java)

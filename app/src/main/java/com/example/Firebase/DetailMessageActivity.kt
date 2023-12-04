@@ -3,6 +3,7 @@ package com.example.Firebase
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.text.method.ScrollingMovementMethod
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -24,7 +25,7 @@ class DetailMessageActivity : AppCompatActivity() {
         var content = intent.getStringExtra("content")
         var subject = intent.getStringExtra("subject")
 
-
+        msgContent.movementMethod =  ScrollingMovementMethod.getInstance()
         msgSubject.text = subject
         msgContent.text = content
         msgSenderEmail.text = senderEmail
