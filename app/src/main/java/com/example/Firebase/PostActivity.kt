@@ -22,8 +22,6 @@ class PostActivity : AppCompatActivity() {
     private val title by lazy { findViewById<EditText>(R.id.enterTitle) }
     private val price by lazy { findViewById<EditText>(R.id.enterPrice) }
     private val description by lazy { findViewById<EditText>(R.id.detailDescription) }
-    //private var auth: FirebaseAuth? = null
-    // private var user: FirebaseUser? = null
     private var status = "1"
     private var user = ""
 
@@ -112,18 +110,5 @@ class PostActivity : AppCompatActivity() {
             adapter?.updateList(items)
         }
     }
-    /*
-    private fun addSeller(userId: String){
-        itemsCollectionRef2.get()
-            .addOnSuccessListener {
-                for (doc in it) {
-                    val email = doc.id
-                    if (email==userId) {
-                        var username = doc.getString("username")
-                        if(username != null) user = username else userId
 
-                    }
-                }
-            }
-    }*/
 }

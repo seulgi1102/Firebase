@@ -87,15 +87,6 @@ class EditActivity :AppCompatActivity() {
         updates["description"] = description
         updates["status"] = status // Change "status" to the actual field name
 
-        // Update the document in Firestore
-        /*itemsCollectionRef.document(dTitle).update(updates)
-            .addOnSuccessListener {
-            }
-            .addOnFailureListener {
-            }
-        } else {
-
-        }*/
             itemsCollectionRef.get().addOnSuccessListener {
                 for (doc in it) {
                     var title = doc.getString("title")

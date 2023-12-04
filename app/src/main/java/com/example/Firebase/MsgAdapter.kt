@@ -36,15 +36,6 @@ data class newMessage(var id: String, var subject:String, var content:String, va
 
 class MsgAdapter(var messages: ArrayList<newMessage>): BaseAdapter(){
 
-    /*lateinit var context:Context
-                lateinit var inflater:LayoutInflater
-                var sample = ArrayList<item>()
-
-                constructor(context: Context,  data:ArrayList<item>) : this() {
-                    this.context = context;
-                    sample = data;
-                    inflater = LayoutInflater.from(context)
-                }*/
     fun updateList(newList: MutableList<newMessage>){
         messages = newList as ArrayList<newMessage>
 

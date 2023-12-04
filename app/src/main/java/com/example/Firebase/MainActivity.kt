@@ -56,9 +56,6 @@ class MainActivity : AppCompatActivity() {
                             //displayimage()
 
                         } else {
-                            /*
-                    Log.w("LoginActivity", "signInWithEmail", it.exception)
-                    Toast.makeText(this, "Authentication failed.", Toast.LENGTH_SHORT).show()*/
                             textView.text = "Email or password is incorrect."
                             val gradientDrawable = ResourcesCompat.getDrawable(resources, R.drawable.textview_warning, null)
                             textView.background= gradientDrawable
@@ -78,31 +75,9 @@ class MainActivity : AppCompatActivity() {
         }
         remoteConfig.setConfigSettingsAsync(configSettings)
         remoteConfig.setDefaultsAsync(R.xml.remote_config) // xml추가
-        //목록 표시
-       /* val textView2 = findViewById<TextView>(R.id.textView)
-        remoteConfig.fetchAndActivate()
-            .addOnCompleteListener(this) { // it: task
-                val test = remoteConfig.getBoolean("test")//키 Long타입으로 가져오기
-                textView2.text = "{$test}"
-            }*/
-    }
-    /*fun displayimage() { // storage에서 이미지 가져오기
-        //val storageRef = Firebase.storage.reference // reference to root
-        //val imageRef1 = storageRef.child("images/computer_sangsangbugi.jpg")
-        val imageRef = Firebase.storage.getReferenceFromUrl(
-            "gs://fir-e354f.appspot.com/Deadpool Collection.jpg"
-        )
-        //이미지뷰에 이미지 넣기
-        val view = findViewById<ImageView>(R.id.imageView)
-        //이미지 표시하기
-        imageRef?.getBytes(Long.MAX_VALUE)?.addOnSuccessListener {
-            val bmp = BitmapFactory.decodeByteArray(it, 0, it.size)
-            view.setImageBitmap(bmp)
-        }?.addOnFailureListener {
-// Failed to download the image
-        }
 
-    }*/
+    }
+
 
     private fun addUser(){
 
