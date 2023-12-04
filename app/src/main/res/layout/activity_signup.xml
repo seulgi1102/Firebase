@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/textview_topbar"
         android:padding="5dp"
-        android:text="︎ReuseMarket"
+        android:text="︎ReUseMarket"
         android:textColor="#F6F6FB"
         android:textSize="34sp"
         android:textStyle="bold" />

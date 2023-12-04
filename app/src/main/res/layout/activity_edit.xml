@@ -69,13 +69,6 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-        <View
-            android:id="@+id/view5"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#F4AB51"
-            android:padding="10dp" />
-
         <TextView
                 android:id="@+id/descTxt5"
                 android:layout_width="match_parent"
@@ -112,11 +105,6 @@
                     android:text="  won"
                     android:textSize="34sp"/>
         </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#F4C651" />
 
     </LinearLayout>
 
@@ -158,12 +146,6 @@
         android:orientation="vertical"
         android:background="#ECECFB"
         android:padding="10dp">
-
-        <View
-            android:id="@+id/view8"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:background="#F4DE51" />
 
         <TextView
             android:id="@+id/descTxt6"
