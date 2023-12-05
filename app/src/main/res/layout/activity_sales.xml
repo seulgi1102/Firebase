@@ -20,7 +20,7 @@
             android:id="@+id/Home"
             android:layout_width="274dp"
             android:layout_height="wrap_content"
-            android:text=" ReuseMarket"
+            android:text=" ReUseMarket"
             android:textColor="#FFFFFF"
             android:textSize="34sp"
             android:textStyle="bold" />

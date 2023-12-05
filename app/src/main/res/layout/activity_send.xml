@@ -23,10 +23,10 @@
         android:id="@+id/sendText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
+        android:text="Write a message to seller"
         android:layout_margin="10dp"
+        android:gravity="center"
         android:padding="3dp"
-        android:text="Revise the sales post"
         android:textColor="#5E5E5E" />
 
     <LinearLayout
